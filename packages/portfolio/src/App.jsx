@@ -21,6 +21,7 @@ const PROJETOS = [
     pitch: "Clínica odontológica com foco em confiança e agendamento.",
     tags: ["Conversão", "UX", "Confiança"],
     swatch: ["#2F5D50", "#C17A4D", "#F4F7F3"],
+    url: "https://portifolio-sites-odontovitta.vercel.app/",
   },
   {
     nicho: "Imobiliária",
@@ -28,6 +29,7 @@ const PROJETOS = [
     pitch: "Busca com filtros reais, cards animados e modal de detalhes.",
     tags: ["React state", "Filtros", "Dados estruturados"],
     swatch: ["#C97A2E", "#4C6B58", "#EDEBE6"],
+    url: "https://portifolio-sites-novalar.vercel.app/",
   },
   {
     nicho: "Restaurante",
@@ -35,6 +37,7 @@ const PROJETOS = [
     pitch: "Hamburgueria com cardápio interativo por categoria.",
     tags: ["Mobile-first", "Micro-interações", "UI/UX"],
     swatch: ["#E85D2C", "#E3B23C", "#211B18"],
+    url: "https://portifolio-sites-brasa27.vercel.app/",
   },
   {
     nicho: "Estética",
@@ -42,6 +45,7 @@ const PROJETOS = [
     pitch: "Clínica de estética editorial, com animação botânica no hero.",
     tags: ["Design editorial", "Animação", "Apresentação"],
     swatch: ["#C77B76", "#B99A62", "#1A1116"],
+    url: "https://portifolio-sites-maisonbelle.vercel.app/",
   },
   {
     nicho: "Barbearia",
@@ -49,6 +53,7 @@ const PROJETOS = [
     pitch: "Barbearia com agendamento em etapas, do serviço à confirmação.",
     tags: ["Fluxo de usuário", "Formulários", "Estado"],
     swatch: ["#4DE8D4", "#C08A3E", "#241A16"],
+    url: "https://portifolio-sites-districtbarber.vercel.app/",
   },
 ];
 
@@ -126,7 +131,9 @@ function Eyebrow({ children }) {
 function ProjectCard({ p }) {
   return (
     <a
-      href="#"
+      href={p.url}
+      target="_blank"
+      rel="noreferrer"
       style={{
         display: "block", background: C.paper, border: `1px solid ${C.line}`, borderRadius: 14,
         overflow: "hidden", transition: "transform 0.25s ease, box-shadow 0.25s ease",
