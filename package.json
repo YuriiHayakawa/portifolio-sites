@@ -1,0 +1,5 @@
+{
+  "name": "yuri-sites",
+  "private": true,
+  "workspaces": ["packages/*"]
+}
